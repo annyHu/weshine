@@ -19,7 +19,7 @@
     box-sizing: border-box;*/
 }
 .scroll_area>p {
-	margin: 20px 0
+	margin: 20px 0!important;
 }
 .swiper-container2 {
 	height: 160px;
