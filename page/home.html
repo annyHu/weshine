@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../lib/bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style/home.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -55,10 +57,41 @@
     <!-- 内容区域 -->
     <main class="main_content">
         <div class="banner">
-            <img src="http://www.weshine.ink/sjw/upload/images/20190101102038749126.jpg" alt="" class="img-fluid">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="http://www.weshine.ink/sjw/upload/images/20190101102038749126.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="swiper-slide">slider2</div>
+                <div class="swiper-slide">slider3</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
         </div>
+
         <div class="container-fluid">
-            <div class="scroll_area">最新专辑</div>
+
+            <div class="scroll_area">
+              <p>最新专辑</p>
+              <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                  <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
             <div class="row">
                 <div class="col-8">
                     <div class="row">
@@ -143,5 +176,28 @@
     <script src="../lib/jquery-3.2.1.min.js"></script>
     <script src="../lib/popper.min.js"></script>
     <script src="../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.min.js"></script>
+    <script>        
+      var mySwiper = new Swiper('.swiper-container', {
+        // autoplay: true,//可选选项，自动滑动
+        pagination: {
+          el: '.swiper-pagination',
+          clickable :true
+        },
+      })      
+    </script>
+    <script>
+      var swiper2 = new Swiper('.swiper-container2', {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 </html>
