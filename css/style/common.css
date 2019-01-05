@@ -1,0 +1,74 @@
+
+@media only screen and (min-width: 1200px){
+    .container{
+        width: 1170px;
+        max-width: 1170px;
+    }
+}
+@media only screen and (min-width:990px) and (max-width:1199px){
+    .container {
+		max-width: 990px;
+		width: 990px
+	}
+}
+@media (min-width:961px) and (max-width:989px) {
+	.container {
+		max-width: 960px;
+		width: 960px
+    }
+}
+@media (min-width:768px) and (max-width:960px) {
+	.container{
+		width: 768px;
+		max-width: 1170px
+    }
+}
+@media (max-width:767px) {
+
+}
+@media (max-width:413px) {
+
+}
+.header .header_user{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    color: hsla(0,0%,100%,.65);
+    cursor: pointer;
+}
+.header .nav{
+    padding: 0;
+}
+.header .header-wrapper{
+    height: 70px;
+    line-height: 70px;
+    
+}
+.header .bg-dark{
+    background: #0D0101;
+}
+.header .header-wrapper .navbar-brand {
+	width: 180px;
+	height: 51px;
+	display: inline-block;
+	background-size: cover;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 20px;
+	background-image: url("../../images/logo.png");
+    text-indent: -2000em;
+    cursor: pointer;
+}
+.header  .nav-item .nav-link{
+    color: #fff;
+}
+.header  .nav-item.active .nav-link{
+    color: hsla(0,0%,100%,.65);
+}
+.header .navbar-light .navbar-nav .nav-link:focus,
+.header .navbar-light .navbar-nav .nav-link:hover{
+    color: hsla(0,0%,100%,.65);
+}
