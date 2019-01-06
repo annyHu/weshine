@@ -244,7 +244,9 @@
     }
 }
 @media (max-width:767px) {
-
+	.worlk_row{
+		padding-right: 15px !important;
+	}
 }
 @media (max-width:413px) {
 
@@ -282,14 +284,14 @@
     text-indent: -2000em;
     cursor: pointer;
 }
-.header  .nav-item .nav-link{
+.navbar-light .nav-item .nav-link{
     color: #fff;
 }
-.header  .nav-item.active .nav-link{
+.navbar-light .nav-item.active .nav-link{
     color: hsla(0,0%,100%,.65);
 }
-.header .navbar-light .navbar-nav .nav-link:focus,
-.header .navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
     color: hsla(0,0%,100%,.65);
 }
 
@@ -393,18 +395,13 @@
 	text-align: left;
 	color: #fff;
 }
-
-.dingyue{
-    width: 100%;
-    float: right !important;
-    margin-right: 21px !important;
-    margin-top: 10px !important;
-    text-align: right;
-    margin: -30px auto;
+.footer .dingyue{
+	margin-top: 10px;
 }
 .footer .dingyue h4{
+	text-align: right;
     margin-bottom: 10px !important;
-    margin-right: 40px !important;
+	margin-right: 40px !important;
 }
 .footer .dingyue form .btn-primary {
 	background: #ce8cad !important;
@@ -467,9 +464,6 @@ textarea.form-control {
 	justify-content: flex-end;
 	padding-right: 10px;
 }
-.widget_text.widget.widget_custom_html{
-    margin-left: 70px !important;
-}
 .footer .btn {
 	display: inline-block;
 	margin-bottom: 0;
@@ -493,26 +487,20 @@ textarea.form-control {
 .btn.btn-primary>.fa{
     line-height: 22px !important;
 }
-button,
-form,
-input,
-select,
-textarea {
-	font-size: 16px;
-	outline-color: transparent;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	text-decoration: none;
-	outline: none
-}
 .widget_text.widget.widget_custom_html{
     margin-left: 70px !important;
 }
 .widget-title {
+	margin-top: 20px !important;
     position: relative;
+    margin-bottom: 10px !important;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+.widget-title-collect{
+	position: relative;
     margin-bottom: 25px !important;
     text-transform: uppercase;
     text-align: center;
@@ -528,8 +516,16 @@ textarea {
 .textwidget{
     text-align: center;
 }
-
-
+.main-footer{
+	padding: 0 24px;
+}
+.navbar-light a{
+	text-decoration: none !important;
+	font-size: 20px;
+}
+.footer .nav-link{
+	padding: .5rem 2rem;
+}
 /* 主要内容区域 */
 .main_content{
     min-height: 500px;
@@ -549,7 +545,7 @@ textarea {
 /* 左侧展示区 */
 /* 作品图片展示项 */
 .recommented_gallery{
-    margin-top: 30px;
+	margin: 15px 0 45px 0;
 }
 .recommented_gallery img{
     width: 100%;
@@ -558,7 +554,8 @@ textarea {
 .gallery_item{
     height: 300px;
     padding: 15px;
-    margin-bottom: 50px;
+	margin-bottom: 40px;
+	box-sizing: border-box;
 }
 .gallery_item img{
     width: 100%;
@@ -574,13 +571,24 @@ textarea {
     font-size: 14px;
     text-align: left;
 }
+.worlk_row{
+	padding-right: 60px;
+}
 /* 列表 */
+.home_right_wrapper{
+	width: 100%;
+}
+.home_right_wrapper::after{
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
 .home_right{
 	margin-top: 15px;
 	width: 292px;
 	box-sizing: border-box;
 	float: right;
-	/* padding-right: 30px; */
 }
 .home_right-list-item{
 	height: 30px;
@@ -595,4 +603,23 @@ textarea {
  line-height: 30px;
  padding: 0 10px;
  font-size: 14px;
+}
+.home_right_img_wrapper{
+	margin-top: 60px; 
+}
+.home_right_img{
+	text-align: right;
+	margin-bottom: 60px;
+}
+.home_right_img img{ 
+	width: 100%;
+	height: 240px;
+}
+
+/* 文字超出省略 */
+.text_overflow{
+	overflow: hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
+	width: 100%;
 }
