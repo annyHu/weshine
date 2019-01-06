@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>未山设计网</title>
     <link rel="stylesheet" href="../css/style/init.css">
@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="../css/style/common.css">
     <link rel="stylesheet" type="text/css" href="../css/style/home.css">
     <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+    <script>
+        let dpr = window.devicePixelRatio;
+        let meta = document.createElement('meta');
+        let initialScale = 1 / dpr;
+        let maximumScale = 1 / dpr;
+        let minimumScale = 1 / dpr;
+        meta.setAttribute('name', 'viewport');
+        meta.setAttribute('content', `width=device-width, user-scalable=no, initial-scale=${initialScale}, maximum-scale=${maximumScale}, minimum-scale=${minimumScale}`);
+        document.head.appendChild(meta);
+    </script>
 </head>
 <body>
     <!-- 头部 -->
@@ -69,7 +79,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid container-fluid-wrapper">
 
             <div class="scroll_area">
               <p>最新专辑</p>
@@ -92,7 +102,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <div class="row worlk_wrapper">
                 <div class="col-8">
                     <div class="row">
                         <div class="col gallery_item">
@@ -135,12 +145,18 @@
                         <a href="#" class="list-group-item list-group-item-action active">
                             分类项目
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action">规划设计</a>
-                        <a href="#" class="list-group-item list-group-item-action">建筑设计</a>
-                        <a href="#" class="list-group-item list-group-item-action">景观设计</a>
-                        <a href="#" class="list-group-item list-group-item-action">规划设计</a>
-                        <a href="#" class="list-group-item list-group-item-action">建筑设计</a>
-                        <a href="#" class="list-group-item list-group-item-action">景观设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">规划设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">建筑设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">景观设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">规划设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">建筑设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">景观设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">规划设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">建筑设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">景观设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">规划设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">建筑设计</a>
+                        <a href="javascript:;" class="list-group-item list-group-item-action home_right-list-item">景观设计</a>
                     </div>
                 </div>
             </div>
