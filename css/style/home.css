@@ -4,22 +4,19 @@
 }
 .swiper-container .swiper-pagination {
 	position: absolute;
-	left: 160px;
-	width: 200px!important;
+	left: 10%;
+	width: 200px;
 }
 .swiper-pagination-bullet-active {
-	background: #101010 100%!important;
+	background: #101010 100%;
 }
 /* 最新专辑 */
 .scroll_area{
     height: 266px;
-    /*background: #f1f4f8;*/
     overflow: hidden;
-   /* padding: 0 15px;
-    box-sizing: border-box;*/
 }
-.scroll_area>p {
-	margin: 20px 0!important;
+.scroll_area_title {
+	margin: 1rem 0!important;
 }
 .swiper-container2 {
 	height: 160px;

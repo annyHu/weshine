@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>未山设计网</title>
-    <link rel="stylesheet" href="../css/style/init.css">
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../lib/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/style/init.css">
     <link rel="stylesheet" href="../css/style/common.css">
     <link rel="stylesheet" type="text/css" href="../css/style/home.css">
-    <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -73,7 +73,7 @@
         <div class="container-fluid">
 
             <div class="scroll_area">
-              <p>最新专辑</p>
+              <p class="scroll_area_title">最新专辑</p>
               <div class="swiper-container2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
@@ -202,7 +202,7 @@
     <script type="text/javascript" src="../lib/swiper/js/swiper.min.js"></script>
     <script>        
       var mySwiper = new Swiper('.swiper-container', {
-        // autoplay: true,//可选选项，自动滑动
+        autoplay: true,//可选选项，自动滑动
         pagination: {
           el: '.swiper-pagination',
           clickable :true
