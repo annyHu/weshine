@@ -5,10 +5,10 @@
 .swiper-container .swiper-pagination {
 	position: absolute;
 	left: 10%;
-	width: 200px;
+	width: 200px!important;
 }
 .swiper-pagination-bullet-active {
-	background: #101010 100%;
+	background: #101010 100%!important;
 }
 /* 最新专辑 */
 .scroll_area{
