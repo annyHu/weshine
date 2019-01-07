@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>未山设计网</title>
     <link rel="stylesheet" href="../css/style/init.css">
@@ -13,14 +13,11 @@
     <link rel="stylesheet" type="text/css" href="../css/style/home.css">
     <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
     <script>
-        let dpr = window.devicePixelRatio;
-        let meta = document.createElement('meta');
-        let initialScale = 1 / dpr;
-        let maximumScale = 1 / dpr;
-        let minimumScale = 1 / dpr;
-        meta.setAttribute('name', 'viewport');
-        meta.setAttribute('content', `width=device-width, user-scalable=no, initial-scale=${initialScale}, maximum-scale=${maximumScale}, minimum-scale=${minimumScale}`);
-        document.head.appendChild(meta);
+        $(document).ready(function(){
+            var deviceWidth = document.documentElement.clientWidth;
+            if(deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5+ 'px';
+        });
     </script>
 </head>
 <body>
@@ -39,7 +36,7 @@
                             <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">BLOG</a>
+                            <a class="nav-link" href="./blog/blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">自媒体</a>
@@ -196,9 +193,9 @@
     </main>
     <!-- 页脚 -->
     <footer id="main-footer" class="main-footer footer">
-        <div class="container-fluid footer-menu hidden-sm">
+        <div class="footer-menu hidden-sm container-fluid">
             <div class="row">
-                <div class="col-md-3 mb-md">
+                <div class="col-md-3 mb-md  col-sm-12 content_center">
                     <section id="text-9" class="widget widget_text"><h2 class="widget-title">关于我们</h2>			
                         <div class="textwidget">
                         <p>我们关注设计为大众日常所用；</p>
@@ -207,7 +204,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-md-6 mb-md navbar-light">
+                <div class="col-md-6 mb-md navbar-light col-sm-12 content_center">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">BLOG</a>
@@ -227,25 +224,27 @@
                             
                         </ul>	
                 </div>
-                <div class="col-md-3 mb-md">
-                    <section id="custom_html-3" class="widget_text widget widget_custom_html">
-                        <h2 class="widget-title-collect">关注我们</h2>
-                        <div class="textwidget custom-html-widget"> 
-                            <img src="http://www.weshine.ink:80/images/ewm.jpg" alt="weixin" width="68" height="66" class="aligncenter">
-                        </div>
-                    </section>
-                    <div class="dingyue">
-                        <h4>订阅WESHINE最新资讯</h4>
-                        <div class="form-group-wrapper">
-                            <form action="" class="subscription-form form-inline">
-                                <div class="form-group">
-                                    <input id="subscribe_email_footer" type="email" name="email" placeholder="输入邮箱" value="" class="form-control">
-                                </div>
-                                <input type="hidden" name="action" value="subscribe">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-paper-plane"></i>
-                                </button>
-                            </form>
+                <div class="col-md-3 mb-md col-sm-12 content_center">
+                    <div>
+                        <section id="custom_html-3" class="widget_text widget widget_custom_html">
+                            <h2 class="widget-title-collect">关注我们</h2>
+                            <div class="textwidget custom-html-widget"> 
+                                <img src="http://www.weshine.ink:80/images/ewm.jpg" alt="weixin" width="68" height="66" class="aligncenter">
+                            </div>
+                        </section>
+                        <div class="dingyue">
+                            <h4>订阅WESHINE最新资讯</h4>
+                            <div class="form-group-wrapper">
+                                <form action="" class="subscription-form form-inline">
+                                    <div class="form-group">
+                                        <input id="subscribe_email_footer" type="email" name="email" placeholder="输入邮箱" value="" class="form-control">
+                                    </div>
+                                    <input type="hidden" name="action" value="subscribe">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -267,17 +266,41 @@
       })      
     </script>
     <script>
-      var swiper2 = new Swiper('.swiper-container2', {
-        slidesPerView: 6,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+        $(document).
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth < 750) {
+            var swiper2 = new Swiper('.swiper-container', {
+                autoplay: true,//可选选项，自动滑动
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            }) 
+        } else if ( deviceWidth > 750 && deviceWidth < 1200) {
+            var swiper2 = new Swiper('.swiper-container2', {              
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        } else {
+            var swiper2 = new Swiper('.swiper-container2', {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }
     </script>
 </body>
 </html>

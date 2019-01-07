@@ -1,15 +1,25 @@
+@media screen and (max-width:321px){
+	html{font-size:15px}
+}
 
+@media screen and (min-width:321px) and (max-width:400px){
+	htmlt{font-size:16px}
+}
+
+@media screen and (min-width:400px){
+	html{font-size:18px}
+}
 @media only screen and (min-width: 1200px){
-    .container{
-        width: 1170px;
-        max-width: 1170px;
+    .container, .container-fluid{
+			width: 1440px;
+			max-width: 1440px;
     }
 }
 @media only screen and (min-width:990px) and (max-width:1199px){
     .container {
-		max-width: 990px;
-		width: 990px
-	}
+			max-width: 990px;
+			width: 990px
+		}
 }
 @media (min-width:992px) {
     .col-md-1,
@@ -243,9 +253,18 @@
 		max-width: 1170px
     }
 }
+/* 移动端 */
 @media (max-width:767px) {
+	.content_center{
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+	}
 	.worlk_row{
 		padding-right: 15px !important;
+	}
+	.footer #text-9{
+		text-align: center;
 	}
 }
 @media (max-width:413px) {
@@ -399,9 +418,9 @@
 	margin-top: 10px;
 }
 .footer .dingyue h4{
-	text-align: right;
-    margin-bottom: 10px !important;
-	margin-right: 40px !important;
+	text-align: center;
+	margin-bottom: 10px !important;
+	margin-right: 40px;
 }
 .footer .dingyue form .btn-primary {
 	background: #ce8cad !important;
@@ -460,7 +479,7 @@ textarea.form-control {
 	height: auto
 }
 .form-group-wrapper{
-    display: flex;
+	display: flex;
 	justify-content: flex-end;
 	padding-right: 10px;
 }
@@ -486,9 +505,6 @@ textarea.form-control {
 }
 .btn.btn-primary>.fa{
     line-height: 22px !important;
-}
-.widget_text.widget.widget_custom_html{
-    margin-left: 70px !important;
 }
 .widget-title {
 	margin-top: 20px !important;
@@ -523,8 +539,8 @@ textarea.form-control {
 	text-decoration: none !important;
 	font-size: 20px;
 }
-.footer .nav-link{
-	padding: .5rem 2rem;
+.footer .form-inline{
+	align-items: flex-start;
 }
 /* 主要内容区域 */
 .main_content{
