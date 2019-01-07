@@ -4,11 +4,20 @@
 }
 .swiper-container .swiper-pagination {
 	position: absolute;
+<<<<<<< HEAD
 	left: 10%;
 	width: 200px!important;
 }
 .swiper-pagination-bullet-active {
 	background: #101010 100%!important;
+=======
+	left: 10% !important;
+	width: 200px !important;
+}
+.swiper-pagination-bullet-active {
+	background: #101010 100% !important;
+	opacity: 0.6 !important;
+>>>>>>> 71aa862676b56b9e254187353220d6710526808a
 }
 /* 最新专辑 */
 .scroll_area{
@@ -23,6 +32,15 @@
 	position: relative;
 }
 .swiper-container2 img {
-	width: 230px;
-	height: 160px
+	width: 224px;
+	height: 166px
+}
+
+/* 加载更多 */
+.load_more{
+	text-align: center;
+	margin:15px 0 60px 0;
+}
+.load_more .btn{
+	padding: 5px 20px !important;
 }
