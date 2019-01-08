@@ -57,6 +57,7 @@
 	text-align: center;
 	line-height: 230px;
 	height: 230px;
+	display: block;
 }
 .gallery_item .img_box img{
 	width: 100%;
