@@ -69,7 +69,7 @@
 .blog_list_content .blog_content_wrapper .inner_content,
 .blog_main_content .blog_content_wrapper .inner_content
 {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #efe4e4;
     width: 100%;
     height: 100%;
     background: #fff !important;
