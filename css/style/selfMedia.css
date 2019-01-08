@@ -76,7 +76,7 @@
     }
     .list_info p, .list_info span {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0.625rem 0!important;
     }
     .list_info h4 {

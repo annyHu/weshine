@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>未山设计网</title>
     <link rel="stylesheet" href="../../css/style/init.css">
@@ -15,37 +15,32 @@
     <link rel="stylesheet" href="../../css/style/selfMedia.css">
     <link rel="stylesheet" type="text/css" href="../../lib/iconfont/iconfont.css">
     <script>
-        let dpr = window.devicePixelRatio;
-        let meta = document.createElement('meta');
-        let initialScale = 1 / dpr;
-        let maximumScale = 1 / dpr;
-        let minimumScale = 1 / dpr;
-        meta.setAttribute('name', 'viewport');
-        meta.setAttribute('content', `width=device-width, user-scalable=no, initial-scale=${initialScale}, maximum-scale=${maximumScale}, minimum-scale=${minimumScale}`);
-        document.head.appendChild(meta);
-
+        document.ready =function(){
+            var deviceWidth = document.documentElement.clientWidth;
+            if(deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5+ 'px';
+        };
     </script>
 </head>
 <body>
     <!-- 头部 -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="header-wrapper container-fluid">
-                <!-- <div class="container"> -->
-                    <a href="#" class="navbar-brand"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./../home.html">首页 <span class="sr-only">(current)</span></a>
-                        </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark header-wrapper ">
+            <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../blog/blog.html">BLOG</a>
+                            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">自媒体</a>
+                            <a class="nav-link" href="./blog/blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./selfMedia/list.html">自媒体</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">企业</a>
@@ -59,14 +54,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">联系</a>
                         </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <i class="fa fa-user header_user"></i>
-                        </form>
-                    </div>
-                <!-- </div> -->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <i class="fa fa-user header_user"></i>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- 内容区域 -->
     <main class="main_content blog_list_content">
