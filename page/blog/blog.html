@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>未山设计网</title>
     <link rel="stylesheet" href="../../css/style/init.css">
@@ -14,33 +14,29 @@
     <link rel="stylesheet" href="../../lib/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../../css/style/blog.css">
     <script>
-        let dpr = window.devicePixelRatio;
-        let meta = document.createElement('meta');
-        let initialScale = 1 / dpr;
-        let maximumScale = 1 / dpr;
-        let minimumScale = 1 / dpr;
-        meta.setAttribute('name', 'viewport');
-        meta.setAttribute('content', `width=device-width, user-scalable=no, initial-scale=${initialScale}, maximum-scale=${maximumScale}, minimum-scale=${minimumScale}`);
-        document.head.appendChild(meta);
+        document.ready =function(){
+            var deviceWidth = document.documentElement.clientWidth;
+            if(deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5+ 'px';
+        };
     </script>
 </head>
 <body>
     <!-- 头部 -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="header-wrapper container-fluid">
-                <!-- <div class="container"> -->
-                    <a href="#" class="navbar-brand">未山设计网</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./../home.html">首页 <span class="sr-only">(current)</span></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark header-wrapper ">
+            <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="./blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../selfMedia/list.html">自媒体</a>
@@ -57,14 +53,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">联系</a>
                         </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <i class="fa fa-user header_user"></i>
-                        </form>
-                    </div>
-                <!-- </div> -->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <i class="fa fa-user header_user"></i>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- 内容区域 -->
     <main class="main_content blog_main_content">
@@ -81,7 +76,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -99,7 +94,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -117,7 +112,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -135,7 +130,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -153,7 +148,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -171,7 +166,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -189,7 +184,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -207,7 +202,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -225,7 +220,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -243,7 +238,7 @@
                         </div>
                         <div class="gallery_description">
                             <div class="left_icon">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <img src="../../images/blog.png">
                             </div>
                             <div class="right">
                                 <a href="./blogList.html">
@@ -259,9 +254,9 @@
     </main>
     <!-- 页脚 -->
     <footer id="main-footer" class="main-footer footer">
-        <div class="container-fluid footer-menu hidden-sm">
+        <div class="footer-menu hidden-sm container-fluid">
             <div class="row">
-                <div class="col-md-3 mb-md">
+                <div class="col-md-3 mb-md  col-sm-12 content_center">
                     <section id="text-9" class="widget widget_text"><h2 class="widget-title">关于我们</h2>			
                         <div class="textwidget">
                         <p>我们关注设计为大众日常所用；</p>
@@ -270,7 +265,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-md-6 mb-md navbar-light">
+                <div class="col-md-6 mb-md navbar-light col-sm-12 content_center">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">BLOG</a>
@@ -290,32 +285,40 @@
                             
                         </ul>	
                 </div>
-                <div class="col-md-3 mb-md">
-                    <section id="custom_html-3" class="widget_text widget widget_custom_html">
-                        <h2 class="widget-title-collect">关注我们</h2>
-                        <div class="textwidget custom-html-widget"> 
-                            <img src="http://www.weshine.ink:80/images/ewm.jpg" alt="weixin" width="68" height="66" class="aligncenter">
-                        </div>
-                    </section>
-                    <div class="dingyue">
-                        <h4>订阅WESHINE最新资讯</h4>
-                        <div class="form-group-wrapper">
-                            <form action="" class="subscription-form form-inline">
-                                <div class="form-group">
-                                    <input id="subscribe_email_footer" type="email" name="email" placeholder="输入邮箱" value="" class="form-control">
-                                </div>
-                                <input type="hidden" name="action" value="subscribe">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-paper-plane"></i>
-                                </button>
-                            </form>
+                <div class="col-md-3 mb-md col-sm-12 content_center">
+                    <div>
+                        <section id="custom_html-3" class="widget_text widget widget_custom_html">
+                            <h2 class="widget-title-collect">关注我们</h2>
+                            <div class="textwidget custom-html-widget"> 
+                                <img src="http://www.weshine.ink:80/images/ewm.jpg" alt="weixin" width="68" height="66" class="aligncenter">
+                            </div>
+                        </section>
+                        <div class="dingyue">
+                            <h4>订阅WESHINE最新资讯</h4>
+                            <div class="form-group-wrapper">
+                                <form action="" class="subscription-form form-inline">
+                                    <div class="form-group">
+                                        <input id="subscribe_email_footer" type="email" name="email" placeholder="输入邮箱" value="" class="form-control">
+                                    </div>
+                                    <input type="hidden" name="action" value="subscribe">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright container-fluid"><a href="http://www.weshine.ink:80/App/toContact.action">关于我们</a><a style="margin-left:8px;">渝ICP备18013201号-1</a><font style="float:right;display:block;color:#fff;margin-right:20px;"> ©2018 未山设计网 </font></div>
+        <div class="copyright container-fluid clear_float">
+            <a href="http://www.weshine.ink:80/App/toContact.action">关于我们</a>
+            <a style="margin-left:8px;">渝ICP备18013201号-1</a>
+            <font class="copyright_weishan"> ©2018 未山设计网 </font>
+        </div>
     </footer>
-
+    <script src="../../lib/jquery-3.2.1.min.js"></script>
+    <script src="../../lib/popper.min.js"></script>
+    <script src="../../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

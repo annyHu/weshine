@@ -4,20 +4,13 @@
 }
 .swiper-container .swiper-pagination {
 	position: absolute;
-<<<<<<< HEAD
 	left: 10%;
 	width: 200px!important;
 }
 .swiper-pagination-bullet-active {
-	background: #101010 100%!important;
-=======
-	left: 10% !important;
-	width: 200px !important;
-}
-.swiper-pagination-bullet-active {
 	background: #101010 100% !important;
+	left: 10% !important;
 	opacity: 0.6 !important;
->>>>>>> 71aa862676b56b9e254187353220d6710526808a
 }
 /* 最新专辑 */
 .scroll_area{
@@ -43,4 +36,30 @@
 }
 .load_more .btn{
 	padding: 5px 20px !important;
+}
+.swiper-container2 .img_box{
+	overflow: hidden;
+	text-align: center;
+	line-height: 166px;
+	height: 166px;
+	display: flex;
+	align-items: center;
+}
+.swiper-container2 img {
+	display: flex;
+	width: 100%;
+	height: auto;
+	min-height: 166px;
+}
+.gallery_item .img_box{
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	line-height: 230px;
+	height: 230px;
+}
+.gallery_item .img_box img{
+	width: 100%;
+	height: auto;
+	min-height: 230px;
 }

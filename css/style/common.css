@@ -266,9 +266,41 @@
 	.footer #text-9{
 		text-align: center;
 	}
-}
-@media (max-width:413px) {
-
+	.copyright{
+		text-align: center;
+	}
+	.copyright a{
+		display: block;
+		text-align: center;
+	}
+	.copyright .copyright_weishan{
+		display: block !important;
+		text-align: center;
+		float: none !important;
+		margin: 0 !important;
+	}
+	.footer .footer-menu {
+		padding: 0 !important;
+	}
+	.worlk_wrapper .home_right_wrapper{
+		display: none;
+	}
+	.gallery_item{
+		margin-bottom: 0 !important;
+	}
+	.home_right_img_wrapper{
+		margin-top: 0 !important;
+	}
+	.home_right_img.align-self-center{
+		margin-bottom: 30px !important;
+	}
+	.footer a {
+		color: #fff;
+		margin-left: 0 !important;
+	}
+	.header .header-wrapper .navbar-brand{
+		margin: 0 !important;
+	}
 }
 .header .header_user{
     width: 32px;
@@ -283,25 +315,19 @@
 .header .nav{
     padding: 0;
 }
-.header .header-wrapper{
-    height: 70px;
-    line-height: 70px;
-    
-}
 .header .bg-dark{
     background: #0D0101;
 }
 .header .header-wrapper .navbar-brand {
-	width: 180px;
-	height: 51px;
+	width: 8rem;
+	height: 2rem;
 	display: inline-block;
 	background-size: cover;
 	padding: 0;
-	margin-left: 0;
-	margin-right: 20px;
 	background-image: url("../../images/logo.png");
-    text-indent: -2000em;
-    cursor: pointer;
+	background-position: 50% 50%;
+	background-size: 100%;
+	cursor: pointer;
 }
 .navbar-light .nav-item .nav-link{
     color: #fff;
@@ -313,7 +339,9 @@
 .navbar-light .navbar-nav .nav-link:hover{
     color: hsla(0,0%,100%,.65);
 }
-
+.header .navbar-toggler{
+	background: #fff;
+}
 /* 页脚 */
 .footer {
 	font-size: 14px;
@@ -339,7 +367,7 @@
 }
 
 .footer .footer-menu {
-	padding: 50px 0
+	padding: 30px 0;
 }
 
 .footer .footer-about .footer-logo img {
@@ -414,6 +442,12 @@
 	text-align: left;
 	color: #fff;
 }
+.footer .copyright_weishan{
+	float:right;
+	display:block;
+	color:#fff;
+	margin-right:20px;
+}
 .footer .dingyue{
 	margin-top: 10px;
 }
@@ -480,8 +514,8 @@ textarea.form-control {
 }
 .form-group-wrapper{
 	display: flex;
-	justify-content: flex-end;
-	padding-right: 10px;
+	justify-content: center;
+	/* padding-right: 10px; */
 }
 .footer .btn {
 	display: inline-block;
@@ -508,12 +542,12 @@ textarea.form-control {
 }
 .widget-title {
 	margin-top: 20px !important;
-    position: relative;
-    margin-bottom: 10px !important;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 600;
+	position: relative;
+	margin-bottom: 10px !important;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
 }
 .widget-title-collect{
 	position: relative;
@@ -546,6 +580,9 @@ textarea.form-control {
 .main_content{
     min-height: 500px;
 }
+.main_content .swiper-button-white{
+	outline: none;
+}
 /* banner  */
 .main_content .banner{
     height: 200px;
@@ -556,7 +593,7 @@ textarea.form-control {
     width: 100%;
 }
 .container-fluid-wrapper{
-	padding: 0 28px;
+	padding: 0 30px 15px 30px;
 }
 /* 左侧展示区 */
 /* 作品图片展示项 */
@@ -631,11 +668,16 @@ textarea.form-control {
 	width: 100%;
 	height: 240px;
 }
-
 /* 文字超出省略 */
 .text_overflow{
 	overflow: hidden;
     text-overflow:ellipsis;
 	white-space: nowrap;
 	width: 100%;
+}
+.clear_float::after{
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden;
 }
