@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width:321px) and (max-width:400px){
-	htmlt{font-size:16px}
+	html{font-size:16px}
 }
 
 @media screen and (min-width:400px){
@@ -11,8 +11,7 @@
 }
 @media only screen and (min-width: 1200px){
     .container, .container-fluid{
-			/* width: 1440px; */
-			max-width: 1440px;
+		max-width: 1440px;
     }
 }
 /* 移动端 */
@@ -34,7 +33,7 @@
 		display: none;
 	}
 	.home_page_main .gallery_item{
-		margin-bottom: 1.8rem !important;
+		margin-bottom: 0 !important;
 	}
 	.home_right_img_wrapper{
 		margin-top: 0 !important;
