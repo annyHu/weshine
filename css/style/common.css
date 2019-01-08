@@ -255,6 +255,11 @@
 }
 /* 移动端 */
 @media (max-width:767px) {
+	/* 导航 */
+	.header .header-wrapper .navbar-brand{
+		margin: 0 !important;
+	}
+	/* 内容区域 */
 	.content_center{
 		display: flex;
 		justify-content: center;
@@ -262,25 +267,6 @@
 	}
 	.worlk_row{
 		padding-right: 15px !important;
-	}
-	.footer #text-9{
-		text-align: center;
-	}
-	.copyright{
-		text-align: center;
-	}
-	.copyright a{
-		display: block;
-		text-align: center;
-	}
-	.copyright .copyright_weishan{
-		display: block !important;
-		text-align: center;
-		float: none !important;
-		margin: 0 !important;
-	}
-	.footer .footer-menu {
-		padding: 0 !important;
 	}
 	.worlk_wrapper .home_right_wrapper{
 		display: none;
@@ -294,12 +280,35 @@
 	.home_right_img.align-self-center{
 		margin-bottom: 30px !important;
 	}
+	/* 页脚 */
 	.footer a {
 		color: #fff;
 		margin-left: 0 !important;
 	}
-	.header .header-wrapper .navbar-brand{
+	.footer .widget-title{
+		text-align: center;
+	}
+	.footer #text-9{
+		text-align: center;
+	}
+	.footer .copyright{
+		text-align: center;
+	}
+	.footer .copyright a{
+		display: block;
+		text-align: center;
+	}
+	.footer .copyright .copyright_weishan{
+		display: block !important;
+		text-align: center;
+		float: none !important;
 		margin: 0 !important;
+	}
+	.footer .footer-menu {
+		padding: 0 !important;
+	}
+	.footer .about_us{
+		display: none !important;
 	}
 }
 .header .header_user{
@@ -546,7 +555,7 @@ textarea.form-control {
 	margin-bottom: 10px !important;
 	text-transform: uppercase;
 	text-align: left;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 600;
 }
 .widget-title-collect{
@@ -675,6 +684,7 @@ textarea.form-control {
 	white-space: nowrap;
 	width: 100%;
 }
+/* 清除浮动 */
 .clear_float::after{
 	content: '';
 	display: block;
