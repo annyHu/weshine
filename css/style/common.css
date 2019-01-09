@@ -355,11 +355,17 @@ textarea.form-control {
 /* banner  */
 .main_content .banner{
     height: 200px;
-    text-align: center;
+	text-align: center;
+	
 }
-.main_content .banner img{
-    height: 100%;
-    width: 100%;
+.main_content .banner_wrapper{
+	display: flex;
+	overflow: hidden;
+}
+.main_content .banner_wrapper img{
+    height: auto;
+	width: 100%;
+	align-self: center;
 }
 .container-fluid-wrapper{
 	padding: 0 30px 15px 30px;
