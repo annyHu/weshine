@@ -450,6 +450,7 @@ textarea.form-control {
     text-overflow:ellipsis;
 	white-space: nowrap;
 	width: 100%;
+	display: block;
 }
 /* 清除浮动 */
 .clear_float::after{
