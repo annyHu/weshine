@@ -32,7 +32,7 @@
 /* 加载更多 */
 .load_more{
 	text-align: center;
-	margin:15px 0 60px 0;
+	margin:30px 0 60px 0;
 }
 .load_more .btn{
 	padding: 5px 20px !important;
@@ -45,21 +45,27 @@
 	display: flex;
 	align-items: center;
 }
-.swiper-container2 img {
+.swiper-container2 .img_box>img {
 	display: flex;
 	width: 100%;
 	height: auto;
 	min-height: 166px;
 }
-.gallery_item .img_box{
+.gallery_item .img_box,
+.home_right_img_wrapper .img_box{
 	align-items: center;
 	overflow: hidden;
 	text-align: center;
 	line-height: 230px;
 	height: 230px;
-	display: block;
+	display: flex;
 }
-.gallery_item .img_box img{
+.home_right_img_wrapper .img_box{
+	margin-bottom: 1.8rem;
+}
+.gallery_item .img_box>img,
+.home_right_img_wrapper .img_box>img
+{
 	width: 100%;
 	height: auto;
 	min-height: 230px;
