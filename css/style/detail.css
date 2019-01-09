@@ -23,7 +23,8 @@
     .detail_box h4 {
         height: 60px;
         line-height: 60px;
-        background: #fff
+        background: #fff;
+        font-size: 1.2rem
     }
     .detail_info {
         min-width: 1200px;
