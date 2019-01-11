@@ -1,5 +1,5 @@
 .swiper-container {
-	height: 200px;
+	height: 580px;
 	position: relative;
 }
 .swiper-container .swiper-pagination {
@@ -19,7 +19,8 @@
 }
 .scroll_area_title {
 	margin: 1rem 0!important;
-	font-size: 1rem
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 .swiper-container2 {
 	height: 160px;

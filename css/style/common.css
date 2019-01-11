@@ -354,18 +354,20 @@ textarea.form-control {
 }
 /* banner  */
 .main_content .banner{
-    height: 200px;
+	height: 580px;
 	text-align: center;
 	
 }
 .main_content .banner_wrapper{
 	display: flex;
 	overflow: hidden;
+	justify-content: center;
+	align-content: center;
 }
 .main_content .banner_wrapper img{
-    height: auto;
+	height: auto;
 	width: 100%;
-	align-self: center;
+	min-height: 580px;
 }
 .container-fluid-wrapper{
 	padding: 0 30px 15px 30px;
@@ -400,13 +402,14 @@ textarea.form-control {
 } */
 .gallery_item .des{
     font-size: 12px;
-    color: #999;
+    color: #bbb;
     line-height: 30px;
 }
 .gallery_item .title{
-    color: #333;
-    font-size: 14px;
-    text-align: left;
+    color: #595758 !important;
+    font-size: 18px;
+		text-align: left;
+		font-weight: bold;
 }
 .worlk_row{
 	padding-right: 60px;
@@ -432,6 +435,7 @@ textarea.form-control {
 	line-height: 30px;
 	padding: 0 10px;
 	font-size: 14px;
+	color: #595758 !important;
 }
 .list-group-item.active{
  background: #595758;
@@ -439,7 +443,7 @@ textarea.form-control {
  height: 30px;
  line-height: 30px;
  padding: 0 10px;
- font-size: 16px;
+ font-size: 18px;
 }
 .home_right_img_wrapper{
 	margin-top: 60px; 
