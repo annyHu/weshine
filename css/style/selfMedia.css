@@ -55,10 +55,10 @@
         margin: 10px 0
     }
     .list_info h4 {
-        font-size: 16px
+        font-size: 18px;
     }
     .list_info p {
-        font-size: 14px;
+        font-size: 18px;
     }
     .list_info span {
         font-size: 12px;
@@ -85,7 +85,7 @@
     }
     .list_info p, .list_info span {
         display: block;
-        font-size: 1rem;
+        font-size: .9rem;
         margin: 0.625rem 0!important;
     }
     .list_info h4 {
@@ -93,7 +93,7 @@
         font-size: 1rem
     }
     .list_info p {
-        font-size: 0.875rem;
+        font-size: .9rem;
     }
     .list_info span {
         font-size: 0.75rem;
