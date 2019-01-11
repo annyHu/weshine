@@ -359,15 +359,19 @@ textarea.form-control {
 	
 }
 .main_content .banner_wrapper{
-	display: flex;
-	overflow: hidden;
-	justify-content: center;
-	align-content: center;
+	width: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 580px;
+    height: 580px;
+    display: flex;
+    align-items: center;
 }
 .main_content .banner_wrapper img{
+	width: 100% !important;
 	height: auto;
-	width: 100%;
 	min-height: 580px;
+	vertical-align: middle;
 }
 .container-fluid-wrapper{
 	padding: 0 30px 15px 30px;
