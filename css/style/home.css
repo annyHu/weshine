@@ -2,10 +2,18 @@
 	height: 580px;
 	position: relative;
 }
-.swiper-container .swiper-pagination {
-	position: absolute;
-	left: 10%;
-	width: 200px!important;
+.swiper-slide {
+	position: relative;
+}
+.a {
+	color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform:translateX(-50%);
+    font-size: 50px;
+    color: #595758!important
 }
 .swiper-pagination-bullet-active {
 	background: #101010 100% !important;
