@@ -1,11 +1,19 @@
 .swiper-container {
-	height: 200px;
+	height: 580px;
 	position: relative;
 }
-.swiper-container .swiper-pagination {
-	position: absolute;
-	left: 10%;
-	width: 200px!important;
+.swiper-slide {
+	position: relative;
+}
+.a {
+	color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform:translateX(-50%);
+    font-size: 50px;
+    color: #595758!important
 }
 .swiper-pagination-bullet-active {
 	background: #101010 100% !important;
@@ -19,7 +27,8 @@
 }
 .scroll_area_title {
 	margin: 1rem 0!important;
-	font-size: 1rem
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 .swiper-container2 {
 	height: 160px;
