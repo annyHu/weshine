@@ -9,11 +9,13 @@
 	color: #fff;
     display: block;
     position: absolute;
-    bottom: -30%;
+    bottom: 40px;
     left: 50%;
     transform:translateX(-50%);
     font-size: 50px;
-    color: #595758!important
+	color: #5a5758!important;
+	line-height: 70px;
+	color: #fff !important;
 }
 .swiper-pagination-bullet-active {
 	background: #101010 100% !important;
@@ -23,12 +25,23 @@
 /* 最新专辑 */
 .scroll_area{
     height: 266px;
-    overflow: hidden;
 }
 .scroll_area_title {
 	margin: 1rem 0!important;
 	font-size: 1.2rem;
 	font-weight: bold;
+}
+
+
+/* 加载更多 */
+.load_more{
+	text-align: center;
+	margin:30px 0 60px 0;
+}
+.load_more .btn{
+	padding: 5px 20px !important;
+	background: #5a5758;
+	border-color: #5a5758;
 }
 .swiper-container2 {
 	height: 160px;
@@ -38,28 +51,42 @@
 	width: 224px;
 	height: 166px
 }
-
-/* 加载更多 */
-.load_more{
-	text-align: center;
-	margin:30px 0 60px 0;
-}
-.load_more .btn{
-	padding: 5px 20px !important;
-}
 .swiper-container2 .img_box{
 	overflow: hidden;
 	text-align: center;
 	line-height: 166px;
 	height: 166px;
-	display: flex;
-	align-items: center;
+	width: 230px;
+	margin-right: 10px;
 }
 .swiper-container2 .img_box>img {
-	display: flex;
 	width: 100%;
 	height: auto;
 	min-height: 166px;
+}
+.multiple-items{
+	margin-right: -10px;
+}
+.multiple-items .slick-prev{
+	z-index: 99;
+	left: -20px;
+}
+.slick-prev:before, .slick-next:before{
+	font-size: 48px !important;
+	/* position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    font-weight: 700;
+    color: inherit;
+    opacity: .8; */
+}
+.multiple-items .slick-next{
+	z-index: 99;
+	right:-10px;
 }
 .gallery_item .img_box,
 .home_right_img_wrapper .img_box{
@@ -73,6 +100,7 @@
 .home_right_img_wrapper .img_box{
 	margin-bottom: 1.8rem;
 }
+
 .gallery_item .img_box>img,
 .home_right_img_wrapper .img_box>img
 {

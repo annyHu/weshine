@@ -73,22 +73,25 @@
     border: 1px solid #ccc;
     line-height: 30px;
     text-align: center;
-    color: hsla(0,0%,100%,.65);
+    color: #fff;
     cursor: pointer;
 }
 .header .nav{
     padding: 0;
 }
 .header .bg-dark{
-    background: #0D0101;
+    background: #5a5758 !important;
+}
+.header .header-wrapper{
+	height: 3.6rem;
 }
 .header .header-wrapper .navbar-brand {
-	width: 8rem;
+	width: 12rem;
 	height: 2rem;
 	display: inline-block;
 	background-size: cover;
 	padding: 0;
-	background-image: url("../../images/logo.png");
+	background-image: url("../../images/logo_write.png");
 	background-position: 50% 50%;
 	background-size: 100%;
 	cursor: pointer;
@@ -109,7 +112,7 @@
 /* 页脚 */
 .footer {
 	font-size: 14px;
-	background: #595758;
+	background: #5a5758;
     color: #fff;
     width: 100%;
 }
@@ -215,10 +218,11 @@
 	margin-right: 40px;
 }
 .footer .dingyue form .btn-primary {
-	background: #ce8cad !important;
+	background: #5a5758 !important;
 	border-color: #fff !important;
 	width: 40px;
 	height: 34px;
+	color: #fff;
 }
 
 .footer .content_right{
@@ -228,6 +232,9 @@
 .footer .content_left.copyright {
 	justify-content: flex-start;
 	padding-left: 15px;
+}
+.footer .content_left{
+	padding: 0 !important;
 }
 .form-control {
 	width: 100%;
@@ -379,13 +386,26 @@ textarea.form-control {
 /* 左侧展示区 */
 /* 作品图片展示项 */
 .recommented_gallery{
-	margin: 15px 0 45px 0;
+	margin: 10px 10px 50px;
 	overflow: hidden;
 	text-align: center;
-	line-height: 200px;
-	height: 200px;
+	line-height: 300px;
+	height: 300px;
 	display: flex;
 	align-items: center;
+	padding: 0;
+	position: relative;
+}
+.recommented_gallery_name{
+	text-align: center;
+	font-size: 32px;
+	font-weight: 800;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 60px;
 }
 .recommented_gallery img{
     width: 100%;
@@ -410,7 +430,7 @@ textarea.form-control {
     line-height: 30px;
 }
 .gallery_item .title{
-    color: #595758 !important;
+    color: #5a5758 !important;
     font-size: 18px;
 		text-align: left;
 		font-weight: bold;
@@ -429,28 +449,56 @@ textarea.form-control {
 	visibility: hidden;
 }
 .home_right{
-	margin-top: 15px;
+	margin-top: 10px;
 	width: 100%;
 	box-sizing: border-box;
 	float: right;
 }
 .home_right-list-item{
-	height: 30px;
-	line-height: 30px;
+	height: 40px;
+	line-height: 40px;
 	padding: 0 10px;
 	font-size: 14px;
-	color: #595758 !important;
+	color: #5a5758 !important;
 }
 .list-group-item.active{
- background: #595758;
- border: 1px solid #595758;
- height: 30px;
- line-height: 30px;
+ background: #5a5758;
+ border: 1px solid #5a5758;
+ height: 40px;
+ line-height: 40px;
  padding: 0 10px;
  font-size: 18px;
 }
+.list-group-item-action:active{
+	background: #5a5758 !important;
+	color: #fff !important;
+	cursor: pointer;
+}
+.list-group-item-action:focus, .list-group-item-action:hover{
+	background: #5a5758 !important;
+	color: #fff !important;
+	cursor: pointer;
+}
 .home_right_img_wrapper{
-	margin-top: 60px; 
+	margin-top: 50px; 
+}
+.home_right_img_wrapper .home_right_hot{
+	text-align: center;
+	line-height: 30px;
+	color: #5a5758;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+/* 推广二维码 */
+.home_right_img_wrapper .vcode{
+	display: flex;
+	justify-content: center;
+	line-height:2rem;
+	width: 100%;
+}
+.home_right_img_wrapper .vcode li{
+	padding: 0 15px !important;
 }
 /* 文字超出省略 */
 .text_overflow{
