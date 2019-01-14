@@ -343,6 +343,7 @@ textarea.form-control {
 }
 .main-footer{
 	padding: 20px 24px;
+	margin-top: 20px;
 }
 .navbar-light a{
 	text-decoration: none !important;

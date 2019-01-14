@@ -78,6 +78,20 @@
 	border-radius: 2px;
 	outline: none;
 }
+.swiper-container2 .img_box .img_source{
+	position: absolute;
+	left: 2px;
+	right: 2px;
+	height: 2rem;
+	line-height: 2rem;
+	color: #fff;
+	font-size: 14px;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	box-sizing: border-box;
+	opacity: 0;
+	transition: all .2s;
+}
 .swiper-container2 .img_box>img {
 	width: 100%;
 	height: auto;
@@ -133,6 +147,9 @@
 }
 .multiple-items:hover .slider_next{
 	right: -14px;
+	opacity: 1;
+}
+.swiper-container2 .img_box:hover .img_source{
 	opacity: 1;
 }
 .gallery_item .img_box,
