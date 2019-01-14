@@ -83,7 +83,7 @@
     background: #5a5758 !important;
 }
 .header .header-wrapper{
-	height: 3.6rem;
+	padding: 0.6rem 0 0.6rem 1rem;
 }
 .header .header-wrapper .navbar-brand {
 	width: 12rem;
@@ -398,14 +398,18 @@ textarea.form-control {
 }
 .recommented_gallery_name{
 	text-align: center;
-	font-size: 32px;
+	font-size: 1.5rem;
 	font-weight: 800;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
 	color: #fff;
 	position: absolute;
-	bottom: 0;
+	bottom: 2.5rem;
 	left: 50%;
 	transform: translateX(-50%);
-	line-height: 60px;
+	line-height: 2rem;
+	height: 3rem;
 }
 .recommented_gallery img{
     width: 100%;

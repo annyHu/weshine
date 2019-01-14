@@ -83,30 +83,12 @@
         </div>
 
         <div class="container-fluid container-fluid-wrapper">
-
-            <!-- <div class="scroll_area">
-              <p class="scroll_area_title">最新专辑</p>
-              <div class="swiper-container2">
-                <div class="multiple-items">
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                  <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
-                </div>
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div> -->
-              <!-- </div>
-            </div> -->  
             <!-- test start -->
             <div class="scroll_area">
-                <p class="scroll_area_title">最新专辑</p>
+                <div class="">
+                    <a href="" class="featured-strip-more-link">查看更多</a>
+                    <p class="scroll_area_title">最新专辑</p>
+                </div>
                 <div class="swiper-container2">
                     <div class="multiple-items">
                         <div class="img_box"><img src="http://www.weshine.ink/sjw\upload/images/20181104191156788101.jpg"></div>
@@ -408,41 +390,32 @@
     <script src="../lib/jquery-3.2.1.min.js"></script>
     <script src="../lib/popper.min.js"></script>
     <script src="../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="../lib/swiper/js/swiper.min.js"></script> -->
-    <script src="https://cdn.bootcss.com/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
-    
+    <script type="text/javascript" src="../lib/swiper/js/swiper.min.js"></script>
+    <script src="../lib/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="../lib/slick-1.8.1/slick/slick.min.js"></script>
     <script> 
+        // 首页滚动banner
+        var mySwiper = new Swiper('.swiper-container', {
+            // autoplay: true,//可选选项，自动滑动
+            pagination: {
+            el: '.swiper-pagination',
+            clickable :true
+            },
+        })      
+    </script>
+    <script>
         $('.multiple-items').slick({
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-            });
-        // 首页滚动banner
-        // var mySwiper = new Swiper('.swiper-container', {
-        //     // autoplay: true,//可选选项，自动滑动
-        //     pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable :true
-        //     },
-        // })      
-    </script>
-    <!-- <script>
+            prevArrow: '<i class="fa fa-chevron-left slider_prev slider_arrow">Previous</i>',
+            nextArrow: '<i class="fa fa-chevron-right slider_next slider_arrow">Next</i>',
+        });
         var deviceWidth = document.documentElement.clientWidth;
         function swiper (int) {
-            var mySwiper2 = new Swiper('.swiper-container2', {
-                slidesPerView: int,
-                spaceBetween : 10,
-                slidesPerGroup: 1,
-                loop: true,
-                loopFillGroupWithBlank: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
+            $('.multiple-items').slick('slickSetOption', 'slidesToShow', int, true)
         }
         if(deviceWidth < 750) {
             swiper(1)
@@ -461,6 +434,6 @@
                 swiper(6)
             }
         })
-    </script> -->
+    </script>
 </body>
 </html>
