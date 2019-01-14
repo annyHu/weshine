@@ -406,11 +406,11 @@ textarea.form-control {
 	box-sizing: border-box;
 	color: #fff;
 	position: absolute;
-	bottom: 2.5rem;
+	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 	line-height: 2rem;
-	height: 3rem;
+	height: 2rem;
 }
 .recommented_gallery img{
     width: 100%;
