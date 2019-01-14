@@ -2,8 +2,8 @@
     width: 100%;
     overflow: hidden;
     text-align: center;
-    line-height: 200px;
-    height: 200px;
+    line-height: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
 
@@ -11,13 +11,13 @@
 .top_banner img,.blog_main_content .top_banner img{
     width: 100% !important;
     height: auto;
-    min-height: 200px;
+    min-height: 400px;
     vertical-align: middle;
 }
 
 @media(min-width:1201px) {
     .detail_box {
-        width: 1200px;
+        width: 1410px;
         margin: auto;
     }
     .detail_box h4 {
@@ -39,29 +39,16 @@
         background: #fff;
     }
     .img_info {
-        height: 50px;
+        height: 40px;
         display: flex;
         border: 1px solid #E6E2E2;
-        border-radius: 3px
-    }
-    .img_info .left {
-        width: 50px;
-        display: flex;
+        border-radius: 3px;
         justify-content: center;
         align-items: center;
     }
-    .img_info .left img {
-        width: 25px;
-        height: 25px
-    }
-    .img_info .right {
-        font-size: 12px;
-        color: #666;
-        display: flex;
-        align-items: center;
-    }
+
     .detail_info_right {
-        width: 1000px;
+        width: 1200px;
         margin-bottom: 30px;
         background: #fff;
     }

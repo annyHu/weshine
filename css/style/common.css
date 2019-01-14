@@ -520,3 +520,14 @@ textarea.form-control {
 	clear: both;
 	visibility: hidden;
 }
+
+.top_banner {
+	position: relative;
+}
+.position_text {
+	position: absolute;
+	right: 3.2rem;
+	bottom: 2rem;
+	color: #fff;
+	font-size: 2rem
+}
