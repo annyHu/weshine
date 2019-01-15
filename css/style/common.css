@@ -11,7 +11,7 @@
 }
 @media only screen and (min-width: 1200px){
     .container, .container-fluid{
-			max-width: 1440px;
+			max-width: 1380px;
 		}
 }
 /* 移动端 */
@@ -418,7 +418,7 @@ textarea.form-control {
 	min-height: 200px;
 }
 .gallery_item{
-    height: 300px;
+    min-height: 300px;
     padding: 10px;
 	box-sizing: border-box;
 }
