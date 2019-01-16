@@ -83,7 +83,7 @@
     background: #5a5758 !important;
 }
 .header .header-wrapper{
-	padding: 0.6rem 0 0.6rem 1rem;
+	padding: 0.6rem 4px 0.6rem 4px;
 }
 .header .header-wrapper .navbar-brand {
 	width: 12rem;
@@ -92,7 +92,7 @@
 	background-size: cover;
 	padding: 0;
 	background-image: url("../../images/logo_write.png");
-	background-position: 50% 50%;
+	background-position: -1.5rem 50%;
 	background-size: 100%;
 	cursor: pointer;
 }
@@ -382,19 +382,19 @@ textarea.form-control {
 	vertical-align: middle;
 }
 .container-fluid-wrapper{
-	padding: 0 30px 15px 30px;
+	padding: 0 20px 15px 20px;
 }
 /* 左侧展示区 */
 /* 作品图片展示项 */
 .recommented_gallery{
-	margin: 10px 10px 50px;
+	margin: 10px 0 50px;
 	overflow: hidden;
 	text-align: center;
 	line-height: 300px;
 	height: 300px;
 	display: flex;
 	align-items: center;
-	padding: 0;
+	padding: 0 20px 0 2px;
 	position: relative;
 }
 .recommented_gallery_name{
@@ -406,11 +406,11 @@ textarea.form-control {
 	box-sizing: border-box;
 	color: #fff;
 	position: absolute;
-	bottom: 2.5rem;
+	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 	line-height: 2rem;
-	height: 3rem;
+	height: 2rem;
 }
 .recommented_gallery img{
     width: 100%;
@@ -422,8 +422,12 @@ textarea.form-control {
     padding: 10px;
 	box-sizing: border-box;
 }
+.home_page_main{
+	margin: 0 !important;
+}
 .home_page_main .gallery_item{
 	margin-bottom: 40px;
+	padding: 0 20px 0 2px;
 }
 /* .gallery_item img{
     width: 100%;
@@ -444,6 +448,9 @@ textarea.form-control {
 	padding-right: 60px;
 }
 /* 列表 */
+.home_right_wrapper_col{
+	padding-right: 0 !important;
+}
 .home_right_wrapper{
 	width: 100%;
 }
@@ -454,7 +461,7 @@ textarea.form-control {
 	visibility: hidden;
 }
 .home_right{
-	margin-top: 10px;
+	margin-top: 0;
 	width: 100%;
 	box-sizing: border-box;
 	float: right;
