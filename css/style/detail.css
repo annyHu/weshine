@@ -23,13 +23,16 @@
     text-transform: uppercase;
     color: #9b9b9b
 }
-.entry-title a{
+a {
     color: #a8a8a8;
+}
+.entry-title a{
+    
     font-size: 1.1rem;
     padding-bottom: 2rem;
     display: block;
 }
-.entry-title a:hover {
+a:hover {
     color: #333;
 }
 .Related .tilte_h5 {
@@ -37,6 +40,24 @@
     text-transform: uppercase;
     margin-bottom: 15px!important;
     color: #a8a8a8!important;
+}
+.must-log-in {
+    font-weight: 300!important;
+    margin: 1rem 0!important;
+}
+
+.wechat {
+    width: 120px;
+    cursor: pointer;
+    height: 40px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: rgb(60, 176, 53)
 }
 @media(min-width:1201px) {
     .detail_box {
