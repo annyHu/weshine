@@ -24,6 +24,13 @@
     box-sizing: border-box;
     color: #949494 !important;
 }
+.blog_list_content .title{
+    color: #949494 !important;
+    font-size: 18px !important;
+}
+.blog_list_content .title:hover{
+    color: #5a5758 !important;
+}
 .blog_main_content .blog_content_wrapper .title:hover{
     color: #5a5758 !important;
     text-decoration: none;

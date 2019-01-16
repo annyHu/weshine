@@ -533,8 +533,8 @@ textarea.form-control {
 }
 .position_text {
 	position: absolute;
-	right: 3.2rem;
-	bottom: 2rem;
+	right: 15px;
+	top: -7rem;
 	color: #fff;
 	font-size: 2rem
 }
@@ -552,4 +552,7 @@ textarea.form-control {
 }
  .a_link:active{
 	color: #595758;
+ }
+a {
+	text-decoration: none !important;
 }

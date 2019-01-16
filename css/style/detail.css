@@ -24,7 +24,7 @@
     color: #9b9b9b
 }
 a {
-    color: #a8a8a8;
+    color: #666;
 }
 .entry-title a{
     
@@ -37,9 +37,9 @@ a:hover {
 }
 .Related .tilte_h5 {
     font-size: 1.1rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 15px!important;
-    color: #a8a8a8!important;
+    /*color: #a8a8a8!important;*/
 }
 .must-log-in {
     font-weight: 300!important;
@@ -71,6 +71,8 @@ a:hover {
         font-size: 1.2rem
     }
     .detail_info {
+        padding: 0 15px;
+        box-sizing: border-box;
         min-width: 1200px;
         display: flex;
         justify-content: space-between;
@@ -92,7 +94,7 @@ a:hover {
     }
 
     .detail_info_right {
-        width: 1200px;
+        width: 1180px;
         margin-bottom: 30px;
         background: #fff;
     }
