@@ -20,6 +20,8 @@
 }
 .container {
     margin:auto!important;
+    padding: 0 15px!important;
+    box-sizing: border-box;
 }
 @media screen and (min-width: 1201px) { 
     .selfMedia_list_content {
@@ -36,6 +38,9 @@
         padding: 50px 30px 0;
         box-sizing: border-box;
         display: flex;
+    }
+    .list:hover, .list:visited, .list:active {
+        border: 1px solid #999;
     }
     .list img {
         width: 140px;
