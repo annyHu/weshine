@@ -538,3 +538,18 @@ textarea.form-control {
 	color: #fff;
 	font-size: 2rem
 }
+/* a标签hover样式 */
+.a_link:link{
+	color: #949494;
+	cursor: pointer;
+	text-decoration: none;
+}
+ .a_link:visited{
+	color: #595758;
+} 
+ .a_link:hover{
+	color: #595758;
+}
+ .a_link:active{
+	color: #595758;
+}

@@ -22,7 +22,11 @@
     font-size: 18px;
     padding: 0 10px 0 0 !important;
     box-sizing: border-box;
+    color: #949494 !important;
+}
+.blog_main_content .blog_content_wrapper .title:hover{
     color: #5a5758 !important;
+    text-decoration: none;
 }
 .blog_main_content .blog_content_wrapper .des{
     line-height: 20px;
