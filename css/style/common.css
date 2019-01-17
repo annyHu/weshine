@@ -19,8 +19,11 @@
 	/* 导航 */
 	.header .header-wrapper .navbar-brand{
 		margin: 0 !important;
+		background-position: 1.5rem 50% !important;
 	}
-	
+	.header .header-wrapper{
+		padding: 0.6rem 0 0.6rem 0.2rem !important;
+	}
 	.worlk_row{
 		padding-right: 15px !important;
 	}
@@ -83,7 +86,10 @@
     background: #5a5758 !important;
 }
 .header .header-wrapper{
-	padding: 0.6rem 4px 0.6rem 4px;
+	padding: 0.6rem 2px 0.6rem 2px;
+}
+.header .header-wrapper .container-fluid{
+	padding: 0 18px;
 }
 .header .header-wrapper .navbar-brand {
 	width: 12rem;
