@@ -6,7 +6,6 @@
 	position: relative;
 }
 .a {
-	color: #fff;
 	width: 100%;
 	padding: 0 20px;
 	position: absolute;
@@ -15,7 +14,6 @@
 	text-align: center;
 	transform:translateX(-50%);
 	font-size: 1.5rem;
-	color: #5a5758!important;
 	line-height: 3rem;
 	color: #fff !important;
 }
@@ -23,6 +21,20 @@
 	background: #101010 100% !important;
 	left: 10% !important;
 	opacity: 0.6 !important;
+}
+.swiper-button-prev, .swiper-button-next {
+	width: 48px!important;
+	height: 48px!important;
+	border-radius: 50%!important;
+	background: rgba(0, 0, 0, .3)!important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: #fff;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+	background: rgba(0, 0, 0, 1)!important;
 }
 /* 最新专辑 */
 .scroll_area{
